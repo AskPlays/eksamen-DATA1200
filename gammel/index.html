@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap" rel="stylesheet">
+  <title>Verdens beste mat Meny</title>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="header" id="header">
+    <span class="logo">Verdens beste mat</span>
+    <nav>
+      <ul class="nav_lenker">
+        <li><a href="#">Meny</a></li>
+        <li><a href="#åpningstider">Åpningstider</a></li>
+        <li><a href="#om_oss">Om oss</a></li>
+      </ul>
+    </nav>
+    <a class="knapp reserver_bord" href="#"><button>Reserver bord</button></a>
+    <!-- bilde kilde: https://www.iconfinder.com/icons/134216/menu_lines_hamburger_icon -->
+    <img onclick="sidemeny.classList.toggle('utvidet');" id="hamburger_knapp" src="./img/hamburgerKnapp.png" width="48" height="48" alt="hamburger meny">
+  </header>
+  <div id="sidemeny">
+    <!-- bilde kilde: https://www.iconfinder.com/icons/134216/menu_lines_hamburger_icon -->
+    <img onclick="sidemeny.classList.toggle('utvidet');" id="lukk_sidemeny" src="./img/hamburgerKnapp.png" width="48" height="48" alt="hamburger meny">
+    <nav>
+      <ul class="nav_lenker">
+        <li><a href="#">Meny</a></li>
+        <li><a href="#åpningstider">Åpningstider</a></li>
+        <li><a href="#om_oss">Om oss</a></li>
+      </ul>
+    </nav>
+    <a class="knapp reserver_bord" href="#"><button>Reserver bord</button></a>
+  </div>
+  <!--forside bilde?-->
+  <div class="forside_bilde"></div>
+  <div class="bakgrunn"></div>
+  <div class="skygge"></div>
+  <div class="hoved">
+    <h2 class="tittel" id="meny">MENY</h2>
+    <h3 class="kategori_tittel">Lunsj</h3>
+    <ul class="lunsj retter">
+      <li>
+        <div>
+          <h3>Frokostbagel</h3>
+          <p>Smørstekt bagel med ost, egg, spekeskinke og ruccula på siden. <br /><span class="allergener">Allergener: laktose, gluten.</span></p>
+        </div>
+        <img src="./img/dishes/lunsj1.jpg" alt="pasta1">
+      </li>
+      <li>
+        <div>
+          <h3>Søtpotet- og gulrotsuppe</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, illum. <br /><span class="allergener">Allergener: laktose.</span></p>
+        </div>
+        <img src="./img/dishes/lunsj2.jpg" alt="pasta1">
+      </li>
+    </ul>
+    <h3 class="kategori_tittel">Pasta</h3>
+    <ul class="middag retter">
+      <li>
+        <div>
+          <h3>Pasta nr.1</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quod? <br /><span class="allergener">Allergener: .</span></p>
+        </div>
+        <img src="./img/dishes/pasta1.jpg" alt="pasta1">
+      </li>
+      <li>
+        <div>
+          <h3>Pasta nr.2</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, illum. <br /><span class="allergener">Allergener: .</span></p>
+        </div>
+        <img src="./img/dishes/pasta2.jpg" alt="pasta1">
+      </li>
+      <li>
+        <div>
+          <h3>Pasta nr.3</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, illum. <br /><span class="allergener">Allergener: .</span></p>
+        </div>
+        <img src="./img/dishes/pasta3.jpg" alt="pasta1">
+      </li>
+    </ul>
+    <h3 class="kategori_tittel">Dessert</h3>
+    <ul class="dessert retter">
+      <li>
+        <div>
+          <h3>Ostekake med jordbærsirup</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, autem? <br /><span class="allergener">Allergener: .</span></p>
+        </div>
+        <img src="./img/dishes/dessert1.jpg" alt="pasta1">
+      </li>
+      <li>
+        <div>
+          <h3>Kladdekake med sjokoladesaus</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, illum. <br /><span class="allergener">Allergener: .</span></p>
+        </div>
+        <img src="./img/dishes/dessert2.jpg" alt="pasta1">
+      </li>
+      <li>
+        <div>
+          <h3>Blåbærpannekake</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, illum. <br /><span class="allergener">Allergener: .</span></p>
+        </div>
+        <img src="./img/dishes/dessert3.jpg" alt="pasta1">
+      </li>
+    </ul>
+    <h3 class="kategori_tittel">Drikke</h3>
+    <ul class="drikke retter">
+      <div id="container">
+        <li>
+          <div>
+            <h3>Mineralvann</h3>
+            <ul class="drikke_liste">
+              <li>Imsdal 0,5L</li>
+              <li>Cola</li>
+              <li>Cola Zero</li>
+              <li>Fanta</li>
+              <li>Sprite</li>
+              <li>Eplemost</li>
+              <li>Juice (Eple/Appelsin)</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>Alkohol</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+        </li>
+      </div>
+    </ul>
+    <!--åpningstider-->
+    <h2 class="tittel" id="åpningstider">ÅPNINGSTIDER</h2>
+    <div class="åpningstider">
+      <div class="dag">
+        <h3>Mandag</h3>
+        <p>11:00 - 22:00</p>
+      </div>
+      <div class="dag">
+        <h3>Tirsdag</h3>
+        <p>11:00 - 22:00</p>
+      </div>
+      <div class="dag">
+        <h3>Onsdag</h3>
+        <p>11:00 - 22:00</p>
+      </div>
+      <div class="dag">
+        <h3>Torsdag</h3>
+        <p>11:00 - 22:00</p>
+      </div>
+      <div class="dag">
+        <h3>Fredag</h3>
+        <p>11:00 - 22:00</p>
+      </div>
+      <div class="dag">
+        <h3>Lørdag</h3>
+        <p>11:00 - 22:00</p>
+      </div>
+      <div class="dag">
+        <h3>Søndag</h3>
+        <p>11:00 - 22:00</p>
+      </div>
+    </div>
+    <div>
+      <!--lag om oss seksjon-->
+      <h2 class="tittel" id="om_oss">OM OSS</h2>
+      <p>
+        Nettsiden vår er bedre enn Elvebredden kafe
+      </p>
+    </div>
+  </div>
+  <footer class="footer">
+    <!--kontakt oss-->
+    <div>
+      <h3>Kontakt oss</h3>
+      <ul>
+        <li>Adresse: Pilestredet 35</li>
+        <li>Postboks: 4321</li>
+        <li>E-post: verdensbestemat@mail.no</li>
+      </ul>
+    </div>
+    <!-- Sosiale media-->
+    <div>
+      <h3>Våre sosiale media</h3>
+      <ul>
+        <li>
+          <a href="https://facebook.com">Facebook
+          <img src="./img/social/facebook-48.png" alt="facebook logo"></a>
+        </li>
+        <li>
+          <a href="https://instagram.com">Instagram
+          <img src="./img/social/instagram-48.png" alt="instagram logo"></a>
+        </li>
+        <li>
+          <a href="https://youtube.com">YouTube
+          <img src="./img/social/youtube-48.png" alt="youtube logo"></a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

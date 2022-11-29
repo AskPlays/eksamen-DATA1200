@@ -1,0 +1,341 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  color: #f1f1f1;
+  font-family: "Circular pro book", sans-serif;
+  height: 3000px;
+}
+
+h1, h2, li, a {
+  color: #f1f1f1;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 1rem 0;
+}
+
+.kategori_tittel {
+  color: #f1f1f1;
+  font-weight: 500;
+  font-size: 2rem;
+  font-family: "Ms Madi", cursive;
+  text-decoration: none;
+  padding: 1rem 0;
+}
+
+header {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #f1f1f1;
+  display: flex;
+  font-family: "Circular pro book", sans-serif;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 20px;
+  position: sticky;
+  top: 0px;
+  transition: all 0.2s ease;
+}
+@media screen and (max-width: 799.5px) {
+  header {
+    padding: 10px 20px;
+  }
+}
+header .nav_lenker li {
+  display: inline-block;
+  padding: 0 20px;
+}
+header .nav_lenker li a {
+  transition: all 0.2s ease 0s;
+}
+header .nav_lenker li a:hover {
+  color: inherit;
+  opacity: 0.7;
+}
+@media screen and (max-width: 799.5px) {
+  header .nav_lenker {
+    display: none;
+  }
+}
+
+.sticky {
+  padding: 0px 20px;
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 799.5px) {
+  .sticky {
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin-bottom: 0px;
+  }
+}
+
+#sidemeny {
+  width: 50%;
+  transition: all 0.2s ease;
+  position: fixed;
+  right: -50%;
+  top: 0px;
+  bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f1f1f1;
+  color: #000;
+  align-items: end;
+}
+#sidemeny nav {
+  width: 100%;
+}
+#sidemeny nav .nav_lenker {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#sidemeny nav .nav_lenker li {
+  display: block;
+  padding: 20px;
+}
+#sidemeny nav .nav_lenker li a {
+  transition: all 0.2s ease 0s;
+  color: #000;
+}
+#sidemeny nav .nav_lenker li a:hover {
+  color: #000;
+  opacity: 0.7;
+}
+#sidemeny #lukk_sidemeny {
+  opacity: 0;
+}
+#sidemeny .knapp {
+  display: block;
+  margin: 0px auto;
+}
+@media screen and (min-width: 800px) {
+  #sidemeny {
+    display: none;
+  }
+}
+#sidemeny.utvidet {
+  right: 0px;
+}
+#sidemeny.utvidet #lukk_sidemeny {
+  opacity: 1;
+}
+
+.hoved {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0px max(20px, (100% - 960px) / 2);
+  background-color: #000;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: 500;
+  font-family: "Ms Madi", cursive;
+  pointer-events: none;
+  width: 15rem;
+  color: inherit;
+}
+
+.forside_bilde {
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+  margin-top: -126px;
+  height: calc(25vw + 150px);
+  background-image: url(../img/resturant.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bakgrunn {
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  position: fixed;
+}
+
+.skygge {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgb(0, 0, 0));
+  height: calc(25vw + 150px);
+  width: 100%;
+  margin-top: -126px;
+}
+
+#hamburger_knapp {
+  padding: 0px;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  filter: invert(100%);
+}
+@media screen and (min-width: 800px) {
+  #hamburger_knapp {
+    display: none;
+  }
+}
+
+#lukk_sidemeny {
+  top: 12.335px;
+  right: 20px;
+  position: fixed;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  transition: all 0.2s ease 0s;
+}
+@media screen and (min-width: 800px) {
+  #lukk_sidemeny {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 799.5px) {
+  .knapp {
+    display: none;
+  }
+}
+
+button {
+  padding: 8px 25px;
+  font-size: inherit;
+  color: inherit;
+  background-color: rgb(44, 113, 246);
+  border: none;
+  border-radius: 3em;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+button:hover {
+  background-color: rgba(44, 113, 246, 0.7);
+}
+
+.tittel {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: "calibri";
+  width: 100%;
+  text-align: center;
+}
+
+.retter {
+  display: flex;
+  flex-direction: column;
+}
+.retter li {
+  list-style: none;
+  padding: 20px;
+  margin: 10px 0px;
+  border-radius: 10px;
+  background-color: rgba(90, 113, 146, 0.2);
+  line-height: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.retter li img {
+  max-height: 200px;
+}
+@media screen and (max-width: 600px) {
+  .retter li {
+    flex-direction: column;
+  }
+  .retter li img {
+    max-height: unset;
+  }
+}
+
+.lunsj {
+  display: flex;
+}
+
+.middag {
+  display: flex;
+}
+
+.dessert {
+  display: flex;
+}
+
+.drikke_liste {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+.drikke_liste li {
+  padding: 8px 10px;
+  margin: 0;
+}
+
+.åpningstider {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-flow: wrap;
+  gap: 20px;
+}
+.åpningstider .dag {
+  list-style: none;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(90, 113, 146, 0.2);
+  line-height: 2rem;
+  display: flex;
+}
+.åpningstider .dag p {
+  border-left: 1px solid white;
+  margin-left: 10px;
+  padding-left: 10px;
+}
+
+footer {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #f1f1f1;
+  display: flex;
+  font-family: "Circular pro book", sans-serif;
+  justify-content: space-evenly;
+  padding: 20px 20px;
+  position: sticky;
+  top: 0px;
+  transition: all 0.2s ease;
+}
+@media screen and (max-width: 799.5px) {
+  footer {
+    justify-content: space-around;
+    padding: 20px 20px;
+    flex-direction: column;
+  }
+}
+footer div {
+  display: inline-block;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+}
+footer div ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  flex-grow: 1;
+}
+footer div ul li {
+  list-style: none;
+  padding: 5px 0px;
+}
+footer div ul li a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0px;
+}
