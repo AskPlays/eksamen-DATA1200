@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap" rel="stylesheet">
+  <title>Nytt Navn? - Meny</title>
+  <script defer src="app.js"></script>
+</head>
+<body lang="no">
+  <header class="header" id="header">
+    <span class="logo">Nytt Navn?</span> <!-- Finn på et nytt navn-->
+    <nav>
+      <ul class="nav_lenker">
+        <li><a href="#meny">Meny</a></li>
+        <li><a href="#åpningstider">Åpningstider</a></li>
+        <li><a href="#om_oss">Om oss</a></li>
+      </ul>
+    </nav>
+    <a class="knapp reserver_bord" href="#"><button>Reserver bord</button></a>
+    <!-- bilde kilde: https://www.iconfinder.com/icons/134216/menu_lines_hamburger_icon -->
+    <img onclick="sidemeny.classList.toggle('utvidet');" id="hamburger_knapp" src="./img/hamburgerKnapp.png" width="48" height="48" alt="hamburger meny">
+  </header>
+  <!-- sidemeny for navigering på mindre skjerm -->
+  <div id="sidemeny">
+    <!-- bilde kilde: https://www.iconfinder.com/icons/134216/menu_lines_hamburger_icon -->
+    <img onclick="sidemeny.classList.toggle('utvidet');" id="lukk_sidemeny" src="./img/hamburgerKnapp.png" width="48" height="48" alt="hamburger meny">
+    <nav>
+      <ul class="nav_lenker">
+        <li><a href="#meny">Meny</a></li>
+        <li><a href="#åpningstider">Åpningstider</a></li>
+        <li><a href="#om_oss">Om oss</a></li>
+      </ul>
+    </nav>
+    <a class="knapp reserver_bord" href="#"><button>Reserver bord</button></a>
+  </div>
+  <!--forside bilde fra pexels med svart gradient-->
+  <div class="forside_bilde"></div>
+  <div class="bakgrunn"></div>
+  <div class="skygge">
+    <h1>Nytt Navn?</h1>
+  </div>
+  <div class="hoved">
+    <h2 class="tittel" id="meny">MENY</h2>
+    <h3 class="kategori_tittel">Lunsj</h3>
+    <ul class="lunsj retter">
+      <li>
+        <div>
+          <h3>Frokostbagel</h3>
+          <p>Smørstekt bagel med ost, egg, spekeskinke og ruccula på siden. <br /><span class="allergener">Allergener: Laktose, gluten.</span></p>
+        </div>
+        <!-- bilder fra pexels -->
+        <img src="./img/dishes/lunsj1.jpg" alt="Frokostbagel på tallerken">
+      </li>
+      <li>
+        <div>
+          <h3>Søtpotet- og Gulrotsuppe</h3>
+          <p>Suppe laget av ferske gulrøtter og søtpoteter fra Frosta. <br /><span class="allergener">Allergener: Laktose.</span></p>
+        </div>
+        <img src="./img/dishes/lunsj2.jpg" alt="Søtpotet- og Gulrotsuppe på tallerken">
+      </li>
+    </ul>
+    <h3 class="kategori_tittel">Pasta</h3>
+    <ul class="middag retter">
+      <li>
+        <div>
+          <h3>Pasta Penne</h3>
+          <p>Pastarett med kjøttdeig, parmesanost og basilikumsblad. <br /><span class="allergener">Allergener: Laktose, gluten.</span></p>
+        </div>
+        <img src="./img/dishes/pasta1.jpg" alt="Pasta Penne på tallerken">
+      </li>
+      <li>
+        <div>
+          <h3>Spicy Pasta Bolognese</h3>
+          <p>Pasta bolognese med parmesan, chilisaus, bønner og hel bit av rød chili. <br /><span class="allergener">Allergener: Laktose, gluten.</span></p>
+        </div>
+        <img src="./img/dishes/pasta2.jpg" alt="Spicy Pasta Bolognese på tallerken">
+      </li>
+      <li>
+        <div>
+          <h3>Cheesy Pasta Bolognese</h3>
+          <p>Pasta bolognese med soltørket tomat, bit av rød chili og ekstra parmesanost. <br /><span class="allergener">Allergener: Laktose, gluten .</span></p>
+        </div>
+        <img src="./img/dishes/pasta3.jpg" alt="Cheesy Pasta Bolognese på tallerken">
+      </li>
+    </ul>
+    <h3 class="kategori_tittel">Dessert</h3>
+    <ul class="dessert retter">
+      <li>
+        <div>
+          <h3>Ostekake med jordbærsirup</h3>
+          <p>Ostekake med jordbærsirup laget av lokale ingredienser. Gluten-fri bunn. <br /><span class="allergener">Allergener: Laktose.</span></p>
+        </div>
+        <img src="./img/dishes/dessert1.jpg" alt="Ostekake med jordbærsirup på tallerken">
+      </li>
+      <li>
+        <div>
+          <h3>Kladdekake med sjokoladesaus</h3>
+          <p>Klassikeren for de som elsker sjokoladekake. Serveres med sjokoladesaus smeltet fra freia melkesjokolade. <br /><span class="allergener">Allergener: Laktose, gluten.</span></p>
+        </div>
+        <img src="./img/dishes/dessert2.jpg" alt="Kladdekake med sjokoladesaus på tallerken">
+      </li>
+      <li>
+        <div>
+          <h3>Blåbærpannekake</h3>
+          <p>Tre pannekaker, krem mellom lagene og toppet med håndplukkede blåbær og mynteblad. <br /><span class="allergener">Allergener: Laktose, gluten .</span></p>
+        </div>
+        <img src="./img/dishes/dessert3.jpg" alt="Blåbærpannekake på tallerken">
+      </li>
+    </ul>
+    <h3 class="kategori_tittel">Drikke</h3>
+    <ul class="drikke retter">
+      <div id="container">
+        <li>
+          <div>
+            <h3>Mineralvann</h3>
+            <ul class="drikke_liste">
+              <li>Imsdal 0,5L</li>
+              <li>Cola</li>
+              <li>Cola Zero</li>
+              <li>Fanta</li>
+              <li>Sprite</li>
+              <li>Eplemost</li>
+              <li>Juice (Eple/Appelsin)</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>Alkohol</h3>
+            <ul class="drikke_liste">
+              <li>Rødvin</li>
+              <li>Hvitvin</li>
+              <li>Øl - Tapp/Flaske/Boks</li>
+              <li>Cocktails</li>
+            </ul>
+          </div>
+        </li>
+      </div>
+    </ul>
+    <!--åpningstider-->
+    <h2 class="tittel" id="åpningstider">ÅPNINGSTIDER</h2>
+    <div class="åpningstider">
+      <div class="dag">
+        <h3>Mandag</h3>
+        <p>Stengt</p>
+      </div>
+      <div class="dag">
+        <h3>Tirsdag</h3>
+        <p>09:00 - 20:00</p>
+      </div>
+      <div class="dag">
+        <h3>Onsdag</h3>
+        <p>11:00 - 22:00</p>
+      </div>
+      <div class="dag">
+        <h3>Torsdag</h3>
+        <p>11:00 - 22:00</p>
+      </div>
+      <div class="dag">
+        <h3>Fredag</h3>
+        <p>13:00 - 23:00</p>
+      </div>
+      <div class="dag">
+        <h3>Lørdag</h3>
+        <p>15:00 - 00:00</p>
+      </div>
+      <div class="dag">
+        <h3>Søndag</h3>
+        <p>13:00 - 22:00</p>
+      </div>
+    </div>
+    <!--om oss seksjon-->
+    <div>
+      <h2 class="tittel" id="om_oss">OM OSS</h2>
+      <p>
+        Vi er verdens beste mat. Som navnet vårt tilsier, serverer vi mat av beste kvalitet til våre storfornøyde kunder. Du finner oss i vakre Pilestredet. Vi er et perfekt spisested for alle aldersgrupper, men er oftest besøkt av de hyggelige studentene fra Oslomet. Vi tilbyr kvalitet, livsglede og en utenomjordisk god atmosfære. Velkommen til oss!
+      </p>
+      <h2 class="stor_lenke"><a href="https://github.com/AskPlays/eksamen-DATA1200">Github (source code)</a></h2>
+    </div>
+  </div>
+  <footer class="footer">
+    <!--kontakt oss-->
+    <div>
+      <h3>Kontakt oss</h3>
+      <ul>
+        <li>Adresse: Pilestredet 35</li>
+        <li>Postboks: 0166 Oslo</li>
+        <li>E-post: verdensbestemat@mail.no</li>
+      </ul>
+    </div>
+    <!-- Sosiale media-->
+    <div>
+      <h3>Våre sosiale media</h3>
+      <ul>
+        <li>
+          <a href="https://facebook.com">Facebook
+          <img src="./img/social/facebook-48.png" alt="facebook logo"></a>
+        </li>
+        <li>
+          <a href="https://instagram.com">Instagram
+          <img src="./img/social/instagram-48.png" alt="instagram logo"></a>
+        </li>
+        <li>
+          <a href="https://youtube.com">YouTube
+          <img src="./img/social/youtube-48.png" alt="youtube logo"></a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
