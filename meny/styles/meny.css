@@ -139,9 +139,10 @@ header .nav_lenker li a:hover {
   font-size: 2.5rem;
   font-weight: 500;
   font-family: "Ms Madi", cursive;
-  pointer-events: none;
   width: 15rem;
   color: inherit;
+  padding: 0px;
+  cursor: pointer;
 }
 
 .forside_bilde {

@@ -9,16 +9,85 @@
   <title>Nytt Navn?</title>
 </head>
 <body>
+  <header class="header" id="header">
+    <a class="logo" href="/">Nytt Navn?</a><!-- Finn på et nytt navn-->
+    <nav>
+      <ul class="nav_lenker">
+        <li><a href="/meny/">Meny</a></li>
+        <li><a href="/booking/">Booking</a></li>
+        <li><a href="/booking/#åpningstider">Åpningstider</a></li>
+        <li><a href="/#om_oss">Om oss</a></li>
+        <li><a href="/accessibility/">Accessibility</a></li>
+      </ul>
+    </nav>
+    <a class="knapp reserver_bord" href="../booking/" target="_self"><button>Reserver bord</button></a>
+    <!-- bilde kilde: https://www.iconfinder.com/icons/134216/menu_lines_hamburger_icon -->
+    <img onclick="sidemeny.classList.toggle('utvidet');" id="hamburger_knapp" src="/img/hamburgerKnapp.png" width="48" height="48" alt="hamburger meny">
+  </header>
+  <div id="sidemeny">
+    <!-- bilde kilde: https://www.iconfinder.com/icons/134216/menu_lines_hamburger_icon -->
+    <img onclick="sidemeny.classList.toggle('utvidet');" id="lukk_sidemeny" src="/img/hamburgerKnapp.png" width="48" height="48" alt="hamburger meny">
+    <nav>
+      <ul class="nav_lenker">
+        <li><a href="/meny/">Meny</a></li>
+        <li><a href="/booking/">Booking</a></li>
+        <li><a href="/booking/#åpningstider">Åpningstider</a></li>
+        <li><a href="/#om_oss">Om oss</a></li>
+        <li><a href="/accessibility/">Accessibility</a></li>
+      </ul>
+    </nav>
+    <a class="knapp reserver_bord" href="#"><button>Reserver bord</button></a>
+  </div>
+  <!--forside bilde fra pexels med svart gradient-->
+  <div class="forside_bilde"></div>
+  <div class="bakgrunn"></div>
   <div class="skygge">
     <h1>Welcome Page!</h1>
   </div>
   <div class="hoved">
     <nav>
       <a href="./meny/">Menyen</a>
-      <a href="./booking.html">Booking</a>
-      <a href="./accessibility.html">Accessibility</a>
-      <a href="./topical.html">Topical page</a>
+      <a href="./booking/">Booking</a>
+      <a href="./accessibility/">Accessibility</a>
+      <a href="./topical/">Topical page</a>
     </nav>
+    <!--om oss seksjon-->
+    <div>
+      <h2 class="tittel" id="om_oss">OM OSS</h2>
+      <p>
+        Vi er verdens beste mat. Som navnet vårt tilsier, serverer vi mat av beste kvalitet til våre storfornøyde kunder. Du finner oss i vakre Pilestredet. Vi er et perfekt spisested for alle aldersgrupper, men er oftest besøkt av de hyggelige studentene fra Oslomet. Vi tilbyr kvalitet, livsglede og en utenomjordisk god atmosfære. Velkommen til oss!
+      </p>
+      <h2 class="stor_lenke"><a href="https://github.com/AskPlays/eksamen-DATA1200">Github (source code)</a></h2>
+    </div>
   </div>
+  <footer class="footer">
+    <!--kontakt oss-->
+    <div>
+      <h3>Kontakt oss</h3>
+      <ul>
+        <li>Adresse: Pilestredet 35</li>
+        <li>Postboks: 0166 Oslo</li>
+        <li>E-post: verdensbestemat@mail.no</li>
+      </ul>
+    </div>
+    <!-- Sosiale media-->
+    <div>
+      <h3>Våre sosiale media</h3>
+      <ul>
+        <li>
+          <a href="https://facebook.com">Facebook
+          <img src="/img/social/facebook-48.png" alt="facebook logo"></a>
+        </li>
+        <li>
+          <a href="https://instagram.com">Instagram
+          <img src="/img/social/instagram-48.png" alt="instagram logo"></a>
+        </li>
+        <li>
+          <a href="https://youtube.com">YouTube
+          <img src="/img/social/youtube-48.png" alt="youtube logo"></a>
+        </li>
+      </ul>
+    </div>
+  </footer>
 </body>
 </html>

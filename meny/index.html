@@ -11,27 +11,31 @@
 </head>
 <body lang="no">
   <header class="header" id="header">
-    <span class="logo">Nytt Navn?</span> <!-- Finn på et nytt navn-->
+    <a class="logo" href="/">Nytt Navn?</a><!-- Finn på et nytt navn-->
     <nav>
       <ul class="nav_lenker">
-        <li><a href="../meny/index.html" target="_self">Meny</a></li>
-        <li><a href="#åpningstider">Åpningstider</a></li>
-        <li><a href="#om_oss">Om oss</a></li>
+        <li><a href="/meny/">Meny</a></li>
+        <li><a href="/booking/">Booking</a></li>
+        <li><a href="/booking/#åpningstider">Åpningstider</a></li>
+        <li><a href="/#om_oss">Om oss</a></li>
+        <li><a href="/accessibility/">Accessibility</a></li>
       </ul>
     </nav>
-    <a class="knapp reserver_bord" href="../booking/index.html" target="_self"><button>Reserver bord</button></a>
+    <a class="knapp reserver_bord" href="../booking/" target="_self"><button>Reserver bord</button></a>
     <!-- bilde kilde: https://www.iconfinder.com/icons/134216/menu_lines_hamburger_icon -->
-    <img onclick="sidemeny.classList.toggle('utvidet');" id="hamburger_knapp" src="./img/hamburgerKnapp.png" width="48" height="48" alt="hamburger meny">
+    <img onclick="sidemeny.classList.toggle('utvidet');" id="hamburger_knapp" src="/img/hamburgerKnapp.png" width="48" height="48" alt="hamburger meny">
   </header>
   <!-- sidemeny for navigering på mindre skjerm -->
   <div id="sidemeny">
     <!-- bilde kilde: https://www.iconfinder.com/icons/134216/menu_lines_hamburger_icon -->
-    <img onclick="sidemeny.classList.toggle('utvidet');" id="lukk_sidemeny" src="./img/hamburgerKnapp.png" width="48" height="48" alt="hamburger meny">
+    <img onclick="sidemeny.classList.toggle('utvidet');" id="lukk_sidemeny" src="/img/hamburgerKnapp.png" width="48" height="48" alt="hamburger meny">
     <nav>
       <ul class="nav_lenker">
-        <li><a href="#meny">Meny</a></li>
-        <li><a href="#åpningstider">Åpningstider</a></li>
-        <li><a href="#om_oss">Om oss</a></li>
+        <li><a href="/meny/">Meny</a></li>
+        <li><a href="/booking/">Booking</a></li>
+        <li><a href="/booking/#åpningstider">Åpningstider</a></li>
+        <li><a href="/#om_oss">Om oss</a></li>
+        <li><a href="/accessibility/">Accessibility</a></li>
       </ul>
     </nav>
     <a class="knapp reserver_bord" href="#"><button>Reserver bord</button></a>
@@ -140,46 +144,6 @@
         </li>
       </div>
     </ul>
-    <!--åpningstider-->
-    <h2 class="tittel" id="åpningstider">ÅPNINGSTIDER</h2>
-    <div class="åpningstider">
-      <div class="dag">
-        <h3>Mandag</h3>
-        <p>Stengt</p>
-      </div>
-      <div class="dag">
-        <h3>Tirsdag</h3>
-        <p>09:00 - 20:00</p>
-      </div>
-      <div class="dag">
-        <h3>Onsdag</h3>
-        <p>11:00 - 22:00</p>
-      </div>
-      <div class="dag">
-        <h3>Torsdag</h3>
-        <p>11:00 - 22:00</p>
-      </div>
-      <div class="dag">
-        <h3>Fredag</h3>
-        <p>13:00 - 23:00</p>
-      </div>
-      <div class="dag">
-        <h3>Lørdag</h3>
-        <p>15:00 - 00:00</p>
-      </div>
-      <div class="dag">
-        <h3>Søndag</h3>
-        <p>13:00 - 22:00</p>
-      </div>
-    </div>
-    <!--om oss seksjon-->
-    <div>
-      <h2 class="tittel" id="om_oss">OM OSS</h2>
-      <p>
-        Vi er verdens beste mat. Som navnet vårt tilsier, serverer vi mat av beste kvalitet til våre storfornøyde kunder. Du finner oss i vakre Pilestredet. Vi er et perfekt spisested for alle aldersgrupper, men er oftest besøkt av de hyggelige studentene fra Oslomet. Vi tilbyr kvalitet, livsglede og en utenomjordisk god atmosfære. Velkommen til oss!
-      </p>
-      <h2 class="stor_lenke"><a href="https://github.com/AskPlays/eksamen-DATA1200">Github (source code)</a></h2>
-    </div>
   </div>
   <footer class="footer">
     <!--kontakt oss-->
