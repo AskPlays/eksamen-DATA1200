@@ -37,6 +37,12 @@ p {
   color: #3b374b;
 }
 
+q {
+  font-size: 18px;
+  font-family: calibri, 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #000000;
+}
+
 .source {
   font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 700;
@@ -64,11 +70,25 @@ hr {
   color: #888888;
 }
 
-.image {
-  max-width: 500;
-}
-
 figure {
+  max-width: 400px;
   display: inline-flex;
   flex-direction: column;
+  float: right;
+}
+
+figcaption {
+  padding: 3px;
+  color: #eeeeee;
+  background-color: #1a1a1a;
+}
+
+figcaption a {
+  color: #eeeeee;
+  text-decoration: none;
+  border-bottom: solid 1px #ffffff;
+}
+
+.image {
+  float: right;
 }
