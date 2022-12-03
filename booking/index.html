@@ -5,49 +5,48 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/booking.css">
-  <link rel="stylesheet" href="/styles/style.css">
+  <link rel="stylesheet" href="../styles/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap" rel="stylesheet">
   <title>Reserver Bord</title>
 </head>
 <body lang="no">
   <header class="header" id="header">
-    <a class="logo" href="/">Nytt Navn?</a> <!-- Finn på et nytt navn-->
+    <a class="logo" href="../">Nytt Navn?</a> <!-- Finn på et nytt navn-->
     <nav>
       <ul class="nav_lenker">
-        <li><a href="/meny/">Meny</a></li>
-        <li><a href="/booking/">Booking</a></li>
-        <li><a href="/booking/#åpningstider">Åpningstider</a></li>
-        <li><a href="/#om_oss">Om oss</a></li>
-        <li><a href="/accessibility/">Accessibility</a></li>
+        <li><a href="../meny/">Meny</a></li>
+        <li><a href="../booking/">Booking</a></li>
+        <li><a href="../booking/#åpningstider">Åpningstider</a></li>
+        <li><a href="../#om_oss">Om oss</a></li>
+        <li><a href="../accessibility/">Accessibility</a></li>
       </ul>
     </nav>
     <a class="knapp reserver_bord" href="../booking/" target="_self"><button>Reserver bord</button></a>
     <!-- bilde kilde: https://www.iconfinder.com/icons/134216/menu_lines_hamburger_icon -->
-    <img onclick="sidemeny.classList.toggle('utvidet');" id="hamburger_knapp" src="/img/hamburgerKnapp.png" width="48" height="48" alt="hamburger meny">
+    <img onclick="sidemeny.classList.toggle('utvidet');" id="hamburger_knapp" src="../img/hamburgerKnapp.png" width="48" height="48" alt="hamburger meny">
   </header>
   <!-- sidemeny for navigering på mindre skjerm -->
   <div id="sidemeny">
     <!-- bilde kilde: https://www.iconfinder.com/icons/134216/menu_lines_hamburger_icon -->
-    <img onclick="sidemeny.classList.toggle('utvidet');" id="lukk_sidemeny" src="/img/hamburgerKnapp.png" width="48" height="48" alt="hamburger meny">
+    <img onclick="sidemeny.classList.toggle('utvidet');" id="lukk_sidemeny" src="../img/hamburgerKnapp.png" width="48" height="48" alt="hamburger meny">
     <nav>
       <ul class="nav_lenker">
-        <li><a href="/meny/">Meny</a></li>
-        <li><a href="/booking/">Booking</a></li>
-        <li><a href="/booking/#åpningstider">Åpningstider</a></li>
-        <li><a href="/#om_oss">Om oss</a></li>
-        <li><a href="/accessibility/">Accessibility</a></li>
+        <li><a href="../meny/">Meny</a></li>
+        <li><a href="../booking/">Booking</a></li>
+        <li><a href="../booking/#åpningstider">Åpningstider</a></li>
+        <li><a href="../#om_oss">Om oss</a></li>
+        <li><a href="../accessibility/">Accessibility</a></li>
       </ul>
     </nav>
-    <a class="knapp reserver_bord" href="#"><button>Reserver bord</button></a>
+    <a class="knapp reserver_bord" href="../booking/"><button>Reserver bord</button></a>
   </div>
   <!--forside bilde fra pexels med svart gradient-->
   <div class="forside_bilde"></div>
   <div class="bakgrunn"></div>
   <div class="skygge">
-    <h1>Nytt Navn?</h1>
+    <h1>Booking</h1>
   </div>
   <div class="hoved">
-    <h2 class="tittel" id="åpningstider">Booking</h2>
     <div class="booking">
       <form action="booking.php" method="post">
         <label for="navn">Navn <input type="text" id="navn" name="navn" placeholder="Ditt navn.."></label>
@@ -111,15 +110,15 @@
       <ul>
         <li>
           <a href="https://facebook.com">Facebook
-          <img src="/img/social/facebook-48.png" alt="facebook logo"></a>
+          <img src="../img/social/facebook-48.png" alt="facebook logo"></a>
         </li>
         <li>
           <a href="https://instagram.com">Instagram
-          <img src="/img/social/instagram-48.png" alt="instagram logo"></a>
+          <img src="../img/social/instagram-48.png" alt="instagram logo"></a>
         </li>
         <li>
           <a href="https://youtube.com">YouTube
-          <img src="/img/social/youtube-48.png" alt="youtube logo"></a>
+          <img src="../img/social/youtube-48.png" alt="youtube logo"></a>
         </li>
       </ul>
     </div>
