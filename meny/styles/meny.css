@@ -24,15 +24,17 @@
     max-height: unset;
   }
 }
-.rett-bilde {
+.retter figure {
   position: relative;
   display: flex;
   flex-direction: column;
 }
-.rett-bilde .bilde-tekst {
+.retter figcaption {
   position: absolute; 
-  left: 4px; 
-  bottom: -2px;
+  left: 0px; 
+  bottom: 0px;
+  padding: 0px 4px;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .lunsj {
