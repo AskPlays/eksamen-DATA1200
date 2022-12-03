@@ -175,6 +175,8 @@ header .nav_lenker li a:hover {
   background-position: center;
 }
 
+
+
 .bakgrunn {
   background-color: #000;
   width: 100%;
@@ -204,6 +206,25 @@ header .nav_lenker li a:hover {
   .skygge h1 {
     font-size: 3rem;
   }
+}
+.skygge figure {
+  position: relative;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  place-content: center;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+}
+.skygge figcaption {
+  position: absolute; 
+  left: 0px; 
+  bottom: 0px;
+  padding: 0px 4px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 300;
+  color: white;
 }
 
 #hamburger_knapp {
