@@ -64,11 +64,7 @@ hr {
   color: #888888;
 }
 
-.image {
-  max-width: 500;
-}
-
 figure {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
 }
