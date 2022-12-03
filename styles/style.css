@@ -8,7 +8,6 @@
 html, body {
   color: #f1f1f1;
   font-family: "Circular pro book", sans-serif;
-  background-color: #000;
 }
 
 h1, h2, li, a {
@@ -170,7 +169,7 @@ header .nav_lenker li a:hover {
   z-index: -1;
   margin-top: -126px;
   height: calc(25vw + 150px);
-  background-image: url(../img/resturant.jpg);
+  background-image: url("../img/resturant.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
