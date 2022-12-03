@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/meny.css">
+  <link rel="stylesheet" href="../styles/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap" rel="stylesheet">
   <title>Nytt Navn? - Meny</title>
   <script defer src="app.js"></script>
@@ -23,12 +24,12 @@
     </nav>
     <a class="knapp reserver_bord" href="../booking/" target="_self"><button>Reserver bord</button></a>
     <!-- bilde kilde: https://www.iconfinder.com/icons/134216/menu_lines_hamburger_icon -->
-    <img onclick="sidemeny.classList.toggle('utvidet');" id="hamburger_knapp" src="./img/hamburgerKnapp.png" width="48" height="48" alt="hamburger meny">
+    <img onclick="sidemeny.classList.toggle('utvidet');" id="hamburger_knapp" src="../img/hamburgerKnapp.png" width="48" height="48" alt="hamburger meny">
   </header>
   <!-- sidemeny for navigering på mindre skjerm -->
   <div id="sidemeny">
     <!-- bilde kilde: https://www.iconfinder.com/icons/134216/menu_lines_hamburger_icon -->
-    <img onclick="sidemeny.classList.toggle('utvidet');" id="lukk_sidemeny" src="./img/hamburgerKnapp.png" width="48" height="48" alt="hamburger meny">
+    <img onclick="sidemeny.classList.toggle('utvidet');" id="lukk_sidemeny" src="../img/hamburgerKnapp.png" width="48" height="48" alt="hamburger meny">
     <nav>
       <ul class="nav_lenker">
         <li><a href="../meny/">Meny</a></li>
@@ -40,7 +41,7 @@
     </nav>
     <a class="knapp reserver_bord" href="../booking/"><button>Reserver bord</button></a>
   </div>
-  <!--forside bilde fra pexels med svart gradient-->
+  <!-- bilde kilde: https://www.pexels.com/nb-no/bilde/koselig-kafe-interiordesign-inne-1307698/-->
   <div class="forside_bilde"></div>
   <div class="bakgrunn"></div>
   <div class="skygge">
@@ -54,15 +55,22 @@
           <h3>Frokostbagel</h3>
           <p>Smørstekt bagel med ost, egg, spekeskinke og ruccula på siden. <br /><span class="allergener">Allergener: Laktose, gluten.</span></p>
         </div>
-        <!-- bilder fra pexels -->
-        <img src="./img/dishes/lunsj1.jpg" alt="Frokostbagel på tallerken">
+        <figure>
+          <img src="./img/dishes/lunsj1.jpg" alt="Frokostbagel på tallerken">
+          <figcaption class="foto-credit">Foto: Jaymantri</figcaption>
+          <!-- bildets kilde: https://www.pexels.com/photo/food-breakfast-fork-bagel-6492/ -->
+        </figure>
       </li>
       <li>
         <div>
           <h3>Søtpotet- og Gulrotsuppe</h3>
           <p>Suppe laget av ferske gulrøtter og søtpoteter fra Frosta. <br /><span class="allergener">Allergener: Laktose.</span></p>
         </div>
-        <img src="./img/dishes/lunsj2.jpg" alt="Søtpotet- og Gulrotsuppe på tallerken">
+        <figure>
+          <img src="./img/dishes/lunsj2.jpg" alt="Søtpotet- og Gulrotsuppe på tallerken">
+          <figcaption class="foto-credit">Foto: Foodie Factor</figcaption>
+          <!-- bildets kilde: https://www.pexels.com/photo/brown-soup-in-white-ceramic-bowl-539451/ -->
+        </figure>
       </li>
     </ul>
     <h3 class="kategori_tittel">Pasta</h3>
@@ -72,21 +80,33 @@
           <h3>Pasta Penne</h3>
           <p>Pastarett med kjøttdeig, parmesanost og basilikumsblad. <br /><span class="allergener">Allergener: Laktose, gluten.</span></p>
         </div>
-        <img src="./img/dishes/pasta1.jpg" alt="Pasta Penne på tallerken">
+        <figure>
+          <img src="./img/dishes/pasta1.jpg" alt="Pasta Penne på tallerken">
+          <figcaption class="foto-credit">Foto: sascha Mayer</figcaption>
+          <!-- bildets kilde: https://www.pexels.com/photo/close-up-photo-of-pasta-5807019/ -->
+        </figure>
       </li>
       <li>
         <div>
           <h3>Spicy Pasta Bolognese</h3>
           <p>Pasta bolognese med parmesan, chilisaus, bønner og hel bit av rød chili. <br /><span class="allergener">Allergener: Laktose, gluten.</span></p>
         </div>
-        <img src="./img/dishes/pasta2.jpg" alt="Spicy Pasta Bolognese på tallerken">
+        <figure>
+          <img src="./img/dishes/pasta2.jpg" alt="Spicy Pasta Bolognese på tallerken">
+          <figcaption class="foto-credit">Foto: sascha Mayer</figcaption>
+          <!-- bildets kilde: https://www.pexels.com/photo/spaghetti-on-black-ceramic-plate-5807020/ -->
+        </figure>
       </li>
       <li>
         <div>
           <h3>Cheesy Pasta Bolognese</h3>
           <p>Pasta bolognese med soltørket tomat, bit av rød chili og ekstra parmesanost. <br /><span class="allergener">Allergener: Laktose, gluten .</span></p>
         </div>
-        <img src="./img/dishes/pasta3.jpg" alt="Cheesy Pasta Bolognese på tallerken">
+        <figure>
+          <img src="./img/dishes/pasta3.jpg" alt="Cheesy Pasta Bolognese på tallerken">
+          <figcaption class="foto-credit">Foto: sascha Mayer</figcaption>
+          <!-- bildets kilde: https://www.pexels.com/photo/pasta-with-red-chillies-on-top-5807022/ -->
+        </figure>
       </li>
     </ul>
     <h3 class="kategori_tittel">Dessert</h3>
@@ -96,21 +116,33 @@
           <h3>Ostekake med jordbærsirup</h3>
           <p>Ostekake med jordbærsirup laget av lokale ingredienser. Gluten-fri bunn. <br /><span class="allergener">Allergener: Laktose.</span></p>
         </div>
-        <img src="./img/dishes/dessert1.jpg" alt="Ostekake med jordbærsirup på tallerken">
+        <figure>
+          <img src="./img/dishes/dessert1.jpg" alt="Ostekake med jordbærsirup på tallerken">
+          <figcaption class="foto-credit">Foto: Cesar de la Cruz</figcaption>
+          <!-- bildets kilde: https://www.pexels.com/photo/garnishing-of-syrup-on-a-cheesecake-3185509/ -->
+        </figure>
       </li>
       <li>
         <div>
           <h3>Kladdekake med sjokoladesaus</h3>
           <p>Klassikeren for de som elsker sjokoladekake. Serveres med sjokoladesaus smeltet fra freia melkesjokolade. <br /><span class="allergener">Allergener: Laktose, gluten.</span></p>
         </div>
-        <img src="./img/dishes/dessert2.jpg" alt="Kladdekake med sjokoladesaus på tallerken">
+        <figure>
+          <img src="./img/dishes/dessert2.jpg" alt="Kladdekake med sjokoladesaus på tallerken">
+          <figcaption class="foto-credit">Foto: Pixabay</figcaption>
+          <!-- bildets kilde: https://www.pexels.com/photo/chocolate-with-milted-chocolate-on-white-ceramic-plate-45202/ -->
+        </figure>
       </li>
       <li>
         <div>
           <h3>Blåbærpannekake</h3>
           <p>Tre pannekaker, krem mellom lagene og toppet med håndplukkede blåbær og mynteblad. <br /><span class="allergener">Allergener: Laktose, gluten .</span></p>
         </div>
-        <img src="./img/dishes/dessert3.jpg" alt="Blåbærpannekake på tallerken">
+        <figure>
+          <img src="./img/dishes/dessert3.jpg" alt="Blåbærpannekake på tallerken">
+          <figcaption class="foto-credit">Foto: Pixabay</figcaption>
+          <!-- bildets kilde: https://www.pexels.com/photo/berries-blueberries-cake-cream-236804/ -->
+        </figure>
       </li>
     </ul>
     <h3 class="kategori_tittel">Drikke</h3>
@@ -160,17 +192,18 @@
     <div>
       <h3>Våre sosiale media</h3>
       <ul>
+        <!-- bilde kilde: https://icons8.com/icon/set/social-media/fluency-systems-filled -->
         <li>
           <a href="https://facebook.com">Facebook
-          <img src="./img/social/facebook-48.png" alt="facebook logo"></a>
+          <img src="../img/social/facebook-48.png" alt="facebook logo"></a>
         </li>
         <li>
           <a href="https://instagram.com">Instagram
-          <img src="./img/social/instagram-48.png" alt="instagram logo"></a>
+          <img src="../img/social/instagram-48.png" alt="instagram logo"></a>
         </li>
         <li>
           <a href="https://youtube.com">YouTube
-          <img src="./img/social/youtube-48.png" alt="youtube logo"></a>
+          <img src="../img/social/youtube-48.png" alt="youtube logo"></a>
         </li>
       </ul>
     </div>
