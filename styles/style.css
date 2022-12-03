@@ -29,15 +29,21 @@ h1, h2, li, a {
 }
 
 nav {
-  display: row;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 4px;
+  margin: 8px 0px;
 }
 nav > a {
   padding: 12px;
   font-size: 1.5em;
   background-color: #123;
   border-radius: 12px;
+}
+nav > a > span {
+  margin-left: 8px;
+  font-size: 0.75em;
 }
 
 header {
