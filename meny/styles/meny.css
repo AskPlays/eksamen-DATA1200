@@ -24,6 +24,16 @@
     max-height: unset;
   }
 }
+.rett-bilde {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.rett-bilde .bilde-tekst {
+  position: absolute; 
+  left: 4px; 
+  bottom: -2px;
+}
 
 .lunsj {
   display: flex;
