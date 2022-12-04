@@ -28,6 +28,7 @@ textarea{
   color: #f1f1f1;
   background: rgb(44, 113, 246);
   cursor: pointer;
+  margin: 5px;
 }
 .åpningstider {
   display: flex;
