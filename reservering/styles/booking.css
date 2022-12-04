@@ -50,3 +50,7 @@ textarea {
   margin-left: 10px;
   padding-left: 10px;
 }
+
+b {
+  text-shadow: rgba(255, 255, 255, 0.5) 2px 0 8px;
+}
