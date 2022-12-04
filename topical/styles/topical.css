@@ -6,7 +6,7 @@ body {
   max-width: 1000px;
   margin: 20px auto;
   padding: 20px;
-  background-color: #eff0f1;
+  background-color: #f1f0ef;
   flex-direction: column;
 }
 
@@ -15,6 +15,9 @@ body {
   padding: 20px;
   background-color: #303030;
   flex-direction: column;
+  position: sticky;
+  top: 8px;
+  width: 100%;
 }
 
 .title {
@@ -107,4 +110,8 @@ figcaption a {
   font-family: 'Segoe UI', system-ui, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 800;
   color: #303030;
+}
+
+.references {
+  display: flex;
 }
