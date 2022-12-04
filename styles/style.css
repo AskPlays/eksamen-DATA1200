@@ -269,17 +269,17 @@ header .nav_lenker li a:hover {
   }
 }
 
-button {
+.knapp {
   padding: 8px 25px;
   font-size: inherit;
   color: inherit;
-  background-color: rgb(35, 87, 192);
+  background-color: rgb(27, 67, 148);
   border: none;
   border-radius: 3em;
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
-button:hover {
+.knapp:hover {
   background-color: rgba(77, 136, 255, 0.7);
 }
 
