@@ -285,7 +285,7 @@ header .nav_lenker li a:hover {
   transition: all 0.3s ease 0s;
 }
 .knapp:hover {
-  background-color: rgba(77, 136, 255, 0.7);
+  background-color: rgb(44, 113, 246);
 }
 
 .tittel {
