@@ -171,7 +171,7 @@ header .nav_lenker li a:hover {
   z-index: -1;
   margin-top: -126px;
   height: calc(25vw + 150px);
-  background-image: url("../img/resturant.jpg");
+  background-image: url("../img/resturant.jpg");/*bilde kilde: https://www.pexels.com/nb-no/bilde/koselig-kafe-interiordesign-inne-1307698/*/
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
