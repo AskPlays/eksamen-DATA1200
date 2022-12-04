@@ -17,6 +17,6 @@ function onScroll() {
 const submitButton = document.getElementById("submit");
 if(submitButton) {
   submitButton.addEventListener("click", () => {
-    alert("Du har reservert bord "+Math.floor(Math.random()*99+1));
+    alert("Takk for din reservasjon "+ document.getElementById("navn").value + ". Ditt reservasjonsnummer er: " + Math.floor(Math.random() * 1000000));
   });
 }
