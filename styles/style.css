@@ -316,12 +316,11 @@ footer {
   }
 }
 footer div {
-  display: inline-block;
   padding: 10px 20px;
   display: flex;
   flex-direction: column;
 }
-footer div ul {
+footer div ul, footer div address {
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
