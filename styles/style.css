@@ -249,6 +249,9 @@ header .nav_lenker li a:hover {
   height: 48px;
   cursor: pointer;
   transition: all 0.2s ease 0s;
+  border: none;
+  background-color: none;
+  padding: 0px;
 }
 @media screen and (min-width: 800px) {
   #lukk_sidemeny {

@@ -23,11 +23,12 @@
     </nav>
     <a class="knapp" href="./reservering/">Reserver bord</a>
     <!-- bilde kilde: https://www.iconfinder.com/icons/134216/menu_lines_hamburger_icon -->
-    <img onclick="sidemeny.classList.toggle('utvidet');" id="hamburger_knapp" src="./img/hamburgerKnapp.png" width="48" height="48" alt="hamburger meny">
+    <img id="hamburger_knapp" src="./img/hamburgerKnapp.png" width="48" height="48" alt="hamburger meny">
   </header>
+  <!-- sidemeny for navigering på mindre skjerm -->
   <div id="sidemeny">
     <!-- bilde kilde: https://www.iconfinder.com/icons/134216/menu_lines_hamburger_icon -->
-    <img onclick="sidemeny.classList.toggle('utvidet');" id="lukk_sidemeny" src="./img/hamburgerKnapp.png" width="48" height="48" alt="hamburger meny">
+    <button id="lukk_sidemeny" onclick="sidemeny.classList.toggle('utvidet');"><img src="./img/hamburgerKnapp.png" width="48" height="48" alt="hamburger meny"></button>
     <nav>
       <ul class="nav_lenker">
         <li><a href="./meny/">Meny</a></li>
