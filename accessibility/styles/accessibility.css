@@ -1,4 +1,19 @@
 .image {
-  float: right;
+  /* float: right; */
   max-width: 300px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 10px;
+  margin: 10px 0px;
+}
+
+.grid div {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: rgb(27, 67, 148);
+  border-radius: 10px
 }
