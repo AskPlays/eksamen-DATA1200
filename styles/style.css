@@ -126,7 +126,7 @@ header .nav_lenker li a:hover {
   color: #000;
   opacity: 0.7;
 }
-#sidemeny #lukk_sidemeny img {
+#sidemeny #lukk_sidemeny {
   opacity: 0;
 }
 #sidemeny .knapp {
@@ -142,7 +142,7 @@ header .nav_lenker li a:hover {
 #sidemeny.utvidet {
   right: 0px;
 }
-#sidemeny.utvidet #lukk_sidemeny img {
+#sidemeny.utvidet #lukk_sidemeny {
   opacity: 1;
 }
 
@@ -250,7 +250,7 @@ header .nav_lenker li a:hover {
   cursor: pointer;
   transition: all 0.2s ease 0s;
   border: none;
-  background-color: transparent;
+  background-color: none;
   padding: 0px;
 }
 @media screen and (min-width: 800px) {
