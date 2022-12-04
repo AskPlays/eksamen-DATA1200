@@ -6,20 +6,20 @@ label {
   margin: 5px;
 }
 
-.inputbox{
+.inputbox {
   height: 25px;
   border-radius: 10px;
   padding: 5px;
   min-width: 130px;
 }
 
-textarea{
+textarea {
   border-radius: 5px;
   padding: 5px;
   margin: 5px;
 }
 
-.input_submit{
+.input_submit {
   height: 40px;
   width: 150px;
   border-radius: 5px;
