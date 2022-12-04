@@ -12,3 +12,16 @@
   background-color: rgb(27, 67, 148);
   border-radius: 10px
 }
+.grid span {
+  margin-top: 10px;
+}
+
+.wide {
+  grid-column: auto;
+}
+
+@media screen and (min-width: 960px) {
+  .wide {
+    grid-column: 1/3;
+  }
+}
