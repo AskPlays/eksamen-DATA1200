@@ -23,8 +23,16 @@ body {
   top: 8px;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   gap: 10px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+@media screen and (min-width: 783px) {
+  .header {
+    justify-content: center;
+  }
 }
 
 .header *:hover {
