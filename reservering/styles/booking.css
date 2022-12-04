@@ -12,6 +12,10 @@ label {
   padding: 5px;
 }
 
+textarea{
+  border-radius: 10px;
+  padding: 5px;
+}
 .åpningstider {
   display: flex;
   flex-direction: row;
