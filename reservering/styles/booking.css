@@ -1,4 +1,4 @@
-.booking > form {
+.booking {
   display: flex;
   flex-direction: column;
 }

@@ -14,8 +14,9 @@ function onScroll() {
 }
 
 // når "reserver bord" knappen trykkes får kunden et reserverings nummer
-document.querySelectorAll(".reserver_bord").forEach((button) => {
-  button.addEventListener("click", () => {
+const submitButton = document.getElementById("submit");
+if(submitButton) {
+  submitButton.addEventListener("click", () => {
     alert("Du har reservert bord "+Math.floor(Math.random()*99+1));
   });
-});
+}

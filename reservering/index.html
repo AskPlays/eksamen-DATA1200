@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="../styles/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap" rel="stylesheet">
   <title>Reserver Bord</title>
+  <script defer src="../app.js"></script>
 </head>
 <body lang="no">
   <header class="header" id="header">
@@ -56,16 +57,14 @@
     <p>Please have some text that is the typical sales pitch about how nice the place is, how perfect it is for a party, etc.</p>
     <h2 class="tittel">Reservering</h2>
     <div class="booking">
-      <form action="booking.php" method="post">
-        <label for="navn">Navn <input type="text" id="navn" name="navn" placeholder="Ditt navn.."></label>
-        <label for="telefon">Telefon <input type="text" id="telefon" name="telefon" placeholder="Ditt telefonnummer.."></label>
-        <label for="dato">Dato <input type="date" id="dato" name="dato" placeholder="Dato.."></label>
-        <label for="tid">Tid <input type="time" id="tid" name="tid" placeholder="Tid.."></label>
-        <label for="antall">Antall personer <input type="number" id="antall" name="antall" placeholder="Antall personer.."></label>
-        <label for="merknad">Merknad</label>
-        <textarea id="merknad" name="merknad" placeholder="Skriv inn merknad.." style="height:200px"></textarea>
-        <div><input type="submit" value="Submit"></div>
-      </form>
+      <label for="navn">Navn <input type="text" id="navn" name="navn" placeholder="Ditt navn.."></label>
+      <label for="telefon">Telefon <input type="text" id="telefon" name="telefon" placeholder="Ditt telefonnummer.."></label>
+      <label for="dato">Dato <input type="date" id="dato" name="dato" placeholder="Dato.."></label>
+      <label for="tid">Tid <input type="time" id="tid" name="tid" placeholder="Tid.."></label>
+      <label for="antall">Antall personer <input type="number" id="antall" name="antall" placeholder="Antall personer.."></label>
+      <label for="merknad">Merknad</label>
+      <textarea id="merknad" name="merknad" placeholder="Skriv inn merknad.." style="height:200px"></textarea>
+      <div><input type="submit" value="Submit" id="submit"></div>
     </div>
     <!--åpningstider-->
     <h2 class="tittel" id="åpningstider">ÅPNINGSTIDER</h2>
