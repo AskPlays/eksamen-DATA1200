@@ -132,6 +132,7 @@ header .nav_lenker li a:hover {
 #sidemeny .knapp {
   display: block;
   margin: 0px auto;
+  background-color: rgb(44, 113, 246);
 }
 @media screen and (min-width: 800px) {
   #sidemeny {
