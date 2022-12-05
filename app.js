@@ -13,9 +13,9 @@ function onScroll() {
   }
 }
 
-// når "reserver bord" knappen trykkes får kunden et reserverings nummer
+// når "submit" knappen trykkes får kunden et reserverings nummer
 const submitButton = document.getElementById("submit");
-if(submitButton) {
+if(submitButton) {//hvis submit knappen finnes på denne siden (booking siden)
   submitButton.addEventListener("click", () => {
     alert("Takk for din reservasjon "+ document.getElementById("navn").value + ". Ditt reservasjonsnummer er: " + Math.floor(Math.random() * 1000000));
   });
